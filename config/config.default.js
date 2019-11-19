@@ -26,6 +26,9 @@ module.exports = appInfo => {
   };
   config.security = {
     domainWhiteList: [ 'http://localhost:3000' ],
+    csrf: {
+      enable: false,
+    },
   };
   //解决跨域end
 
